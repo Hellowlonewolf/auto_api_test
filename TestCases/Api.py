@@ -7,7 +7,7 @@ from Base.BaseElementEnmu import Element
 class ApiTest(ParametrizedTestCase):
     def test_api(self):
         ls = read_excel(Element.API_FILE)
-        Config().config_req(ls)
+        Config(2).config_req(ls)
 
     @classmethod
     def setUpClass(cls):
